@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html5>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #105353;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .form-inline {
+            display: flex;
+            flex-flow: row wrap;
+            text-align:left;
+        }
+        
+
+        .form-inline label {
+                color: white;
+                margin: 5px 20px 5px 0;
+                text-align: left;
+                display: table-cell;
+
+        }
+
+        .form-inline input {
+                vertical-align: middle;
+                margin: 5px 20px 5px 0;
+                padding: 10px;
+                background-color: white;
+                border: 1px solid red;
+                display: table-cell;
+        }
+
+            .form-inline button {
+                padding: 10px 30px;
+                background-color: dodgerblue;
+                border: 1px solid #ddd;
+                color: white;
+                cursor: pointer;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+
+        img {
+            width: 800px;
+            height: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            
+        }
+
+        .form-inline button:hover {
+                    background-color: royalblue;
+        }
+        
+        .form_ {
+            margin: auto;
+            width: 80%;
+            border: 5px solid #73AD21;
+            padding: 30px;
+            margin-top: 10%;
+            text-align:center;
+            text-shadow: inherit;
+            font-size:20px;
+            
+
+        }
+
+        @media (max-width: 500px) {
+            .form-inline input {
+                margin: 20px 0;
+            }
+
+            .form-inline {
+                flex-direction: column;
+                align-items: stretch;
+                text-align:left;
+            }
+        }
+        .buttonHolder {
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Boston House Prediction Using Random Forest Regressor</h1>
+    <div class='form_'>
+        <form action="/" method="post">
+            <div class="container">
+                <label for="DIS">DIS:</label>
+                <input type="number" step="0.01" id="DIS" placeholder="Enter DIS" name="DIS" value='0'>
+                <label for="pwd">B:</label>
+                <input type="number" step="0.01" id="B" placeholder="Enter B" name="B"  value='0'>
+                <label for="ZN">ZN:</label>
+                <input type="number" step="0.01" id="ZN" placeholder="Enter ZN" name="ZN"  value='0'>
+            </div>
+            <br>
+            <div class="container">
+                <label for="pwd">RM:</label>
+                <input type="number" step="0.01" id="pwd" placeholder="Enter RM" name="pswd"  value='0'>
+                <label for="LSTAT">LSTAT:</label>
+                <input type="number" step="0.01" id="LSTAT" placeholder="Enter LSTAT" name="LSTAT"  value='0'>
+                <label for="PTRATIO">PTRATIO:</label>
+                <input type="number" step="0.01" id="PTRATIO" placeholder="Enter PTRATIO" name="PTRATIO"  value='0'>
+            </div>
+            <br>
+            <div class="container">
+                <label for="INDUS">INDUS:</label>
+                <input type="number" step="0.01" id="INDUS" placeholder="Enter INDUS" name="INDUS"  value='0'>
+                <label for="TAX">TAX:</label>
+                <input type="number" step="0.01" id="TAX" placeholder="Enter TAX" name="TAX"  value='0'>
+                <label for="NOX">NOX:</label>
+                <input type="number" step="0.01" id="NOX" placeholder="Enter NOX" name="NOX"  value='0'>
+            </div>
+            <br>
+            <div class="container">
+                <label for="CRIM">CRIM:</label>
+                <input type="number" step="0.01" id="CRIM" placeholder="Enter CRIM" name="CRIM"  value='0'>
+                <label for="AGE">AGE:</label>
+                <input type="number" step="0.01" id="AGE" placeholder="Enter AGE" name="AGE"  value='0'>
+                <label for="RAD">RAD:</label>
+                <input type="number" step="0.01" id="RAD" placeholder="Enter RAD" name="RAD"  value='0'>
+            </div>
+            <div class="buttonHolder">
+                <button  type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    
+</body>
+</html>
